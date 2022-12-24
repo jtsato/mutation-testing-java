@@ -20,6 +20,8 @@
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <jacoco.agent.version>0.8.8</jacoco.agent.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+        <sonar.organization>jtsato</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
