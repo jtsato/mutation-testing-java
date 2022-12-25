@@ -35,6 +35,7 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource({
         "1, 1, 0",
+        "10, 5, 5",
     })
     public void successfulToSubtractTwoNumbers(int first, int second, int expected) {
         // Arrange
@@ -49,6 +50,7 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource({
         "1, 1, 1",
+        "10, 5, 50",
     })
     public void successfulToMultiplyTwoNumbers(int first, int second, int expected) {
         // Arrange
@@ -63,6 +65,7 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource({
         "1, 1, 1, 0",
+        "10, 4, 2, 2",
     })
     public void successfulToDivideTwoNumbers(int dividend, int divisor, int expectedQuotient, int expectedRemainder) {
         // Arrange
