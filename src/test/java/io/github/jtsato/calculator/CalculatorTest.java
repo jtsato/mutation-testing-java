@@ -20,6 +20,7 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource({
         "5, 5, 10",
+        "10, 10, 20",
     })
     public void successfulToAddTwoNumbers(int first, int second, int expected) {
         // Arrange
@@ -85,7 +86,7 @@ public class CalculatorTest {
                 Assertions.assertThrows(Exception.class,
                         () -> calculator.divide(dividend, divisor));
         // Assert
-        assertThat(exception).isInstanceOf(ArithmeticException.class);
-        assertThat(exception.getMessage()).isEqualTo("/ by zero");
+        assertThat(exception).isInstanceOf(IllegalArgumentException.class);
+        assertThat(exception.getMessage()).isEqualTo("Divisor cannot be zero");
     }
 }

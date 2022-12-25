@@ -96,7 +96,7 @@
                 <artifactId>pitest-maven</artifactId>
                 <version>${pitest-maven.version}</version>
                 <configuration>
-                    <verbose>true</verbose>
+                    <verbose>false</verbose>
                     <failWhenNoMutations>false</failWhenNoMutations>
                     <skip>false</skip>
                     <reportsDirectory>${project.build.directory}/mutation-report</reportsDirectory>
